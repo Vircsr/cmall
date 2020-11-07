@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mall-admin
+  profiles:
+    active: dev #默认开发环境
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:/mapper/*.xml
